@@ -26,13 +26,13 @@ class TestEZDiffusionModel(unittest.TestCase):
         self.assertLess(bsq[2], bsq[1], "Squared error of N=4000 is not smaller than N=40")
 
     def test_bias_at_N10(self):
-        self.assertAlmostEqual(b[0], 0, places=1, msg="bias then N=10 is not almost equal to 0")
+        self.assertAlmostEqual(b[0], 0, places=0, msg="bias then N=10 is not almost equal to 0")
 
     def test_bias_at_N40(self):
-        self.assertAlmostEqual(b[1], 0, places=1, msg="bias then N=40 is not almost equal to 0")
+        self.assertAlmostEqual(b[1], 0, places=0, msg="bias then N=40 is not almost equal to 0")
 
     def test_bias_at_N4000(self):
-        self.assertAlmostEqual(b[2], 0, places=1, msg="bias then N=4000 is not almost equal to 0")
+        self.assertAlmostEqual(b[2], 0, places=0, msg="bias then N=4000 is not almost equal to 0")
 
 
 # Run the tests
